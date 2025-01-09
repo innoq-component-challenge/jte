@@ -1,0 +1,11 @@
+# IntelliJ
+.idea/
+*.iml
+
+# JTE
+/jte-classes/
+
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
