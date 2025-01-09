@@ -15,6 +15,15 @@
       <div>
         This is another – more boring – @template.components.badge(content = @`Badge`)
       </div>
+
+      <h1 class="mt-5">Buttons</h1>
+      @template.components.button(content = @`Simple button @template.components.badge(content = @`Some Badge`, type = "danger")`)
+      <hr />
+      @template.components.button(styling = "cta", additionalClasses = "text-uppercase", content = @`CTA button with uppercase`)
+      <hr />
+      <!-- TODO: button with additional attributes - data-foo="bar" leer aria-live="polite" -->
+      <hr />
+      <!-- TODO: button with name and value - type="button" name="action" value="delete" -->
     </div>
   </body>
 </html>
