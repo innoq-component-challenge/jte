@@ -22,7 +22,9 @@
       @template.components.button(styling = "cta", additionalClasses = "text-uppercase", content = @`CTA button with uppercase`)
       <hr />
       <!-- TODO: button with additional attributes - data-foo="bar" leer aria-live="polite" -->
+      @template.components.button(content = @`button with additional attributes`)
       <hr />
+      @template.components.button(content = @`button with name and value`)
       <!-- TODO: button with name and value - type="button" name="action" value="delete" -->
     </div>
   </body>
