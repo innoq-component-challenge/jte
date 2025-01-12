@@ -26,6 +26,29 @@
       <hr />
       @template.components.button(content = @`button with name and value`)
       <!-- TODO: button with name and value - type="button" name="action" value="delete" -->
+
+      <h1 class="mt-5">Cards</h1>
+      @template.components.card(headingLevel = 2, heading = @`
+        <span lang="de">Großartige</span> Card
+        <span>More heading</span>
+      `, content = @`
+        Welcome to the <strong>best card</strong>
+      `, footer = @`
+        This is the @template.components.badge(content = @`footer`)!`)
+      <hr />
+      @template.components.card(headingLevel = 1, href="#foo", heading = @`
+        <span>Another card with a Link as Header</span>
+      `, content = @`
+        Content baby!
+      `)
+      <hr />
+      @template.components.card(headingLevel = 3, heading = @`
+        <span>Völker der Welt</span>
+      `, content = @`
+        Cardo Number <del>five</del>three
+      `, footer = @`
+        <span>Schaut auf diese Card</span>
+      `)
     </div>
   </body>
 </html>
