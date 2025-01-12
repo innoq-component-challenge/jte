@@ -1,3 +1,7 @@
+@import java.util.Map
+
+@param Map<String, String> list
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,6 +53,9 @@
       `, footer = @`
         <span>Schaut auf diese Card</span>
       `)
+
+      <h1 class="mt-5">List</h1>
+      @template.components.list(children = list)
     </div>
   </body>
 </html>
